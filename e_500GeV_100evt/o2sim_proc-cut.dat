@@ -1,0 +1,108 @@
+Summary of cut settings per media.
+-- Default cut settings:
+	CUTGAM = 0.001
+	CUTELE = 0.001
+	CUTNEU = 0.001
+	CUTHAD = 0.001
+	CUTMUO = 0.001
+	BCUTE = 0.001
+	BCUTM = 0.001
+	DCUTE = 0.001
+	DCUTM = 0.001
+	PPCUTM = 0.001
+	TOFMAX = 0.1
+-- Custom cut settings for single media:
+Global medium ID 3 (module = FOC, medium name = FOC_W conv.$):
+	CUTGAM = 5e-05
+	CUTELE = 0.0001
+	CUTNEU = 0.0001
+	CUTHAD = 0.0001
+	CUTMUO = 0.0001
+	BCUTE = 0.0001
+	BCUTM = 0.0001
+	DCUTE = 0.0001
+	DCUTM = 0.0001
+Global medium ID 4 (module = FOC, medium name = FOC_Si sens pad$):
+	CUTGAM = 1e-05
+	CUTELE = 1e-05
+	CUTNEU = 1e-05
+	CUTHAD = 1e-05
+	CUTMUO = 1e-05
+	BCUTE = 1e-05
+	BCUTM = 1e-05
+	DCUTE = 1e-05
+	DCUTM = 1e-05
+Global medium ID 5 (module = FOC, medium name = FOC_Si sens pix$):
+	CUTGAM = 1e-05
+	CUTELE = 1e-05
+	CUTNEU = 1e-05
+	CUTHAD = 1e-05
+	CUTMUO = 1e-05
+	BCUTE = 1e-05
+	BCUTM = 1e-05
+	DCUTE = 1e-05
+	DCUTM = 1e-05
+Global medium ID 6 (module = FOC, medium name = FOC_G10 plate$):
+	CUTGAM = 0.0001
+	CUTELE = 0.0001
+	CUTNEU = 0.0001
+	CUTHAD = 0.0001
+	CUTMUO = 0.0001
+	BCUTE = 0.0001
+	BCUTM = 0.0001
+	DCUTE = 0.0001
+	DCUTM = 0.0001
+Global medium ID 9 (module = FOC, medium name = FOC_Alloy  conv.$):
+	CUTGAM = 5e-05
+	CUTELE = 0.0001
+	CUTNEU = 0.0001
+	CUTHAD = 0.0001
+	CUTMUO = 0.0001
+	BCUTE = 0.0001
+	BCUTM = 0.0001
+	DCUTE = 0.0001
+	DCUTM = 0.0001
+Global medium ID 14 (module = FOC, medium name = FOC_Aluminium$):
+	CUTGAM = 5e-05
+	CUTELE = 0.0001
+	CUTNEU = 0.0001
+	CUTHAD = 0.0001
+	CUTMUO = 0.0001
+	BCUTE = 0.0001
+	BCUTM = 0.0001
+	DCUTE = 0.0001
+	DCUTM = 0.0001
+Summary of process settings per media.
+-- Default process settings:
+	PAIR = 1
+	COMP = 1
+	PHOT = 1
+	PFIS = 0
+	DRAY = 0
+	ANNI = 1
+	BREM = 1
+	HADR = 1
+	MUNU = 1
+	DCAY = 1
+	LOSS = 2
+	MULS = 1
+	CKOV = 1
+-- Custom process settings for single media:
+Global medium ID 3 (module = FOC, medium name = FOC_W conv.$):
+	DRAY = 1
+	LOSS = 3
+Global medium ID 4 (module = FOC, medium name = FOC_Si sens pad$):
+	DRAY = 1
+	LOSS = 1
+Global medium ID 5 (module = FOC, medium name = FOC_Si sens pix$):
+	DRAY = 1
+	LOSS = 1
+Global medium ID 6 (module = FOC, medium name = FOC_G10 plate$):
+	DRAY = 1
+	LOSS = 3
+Global medium ID 9 (module = FOC, medium name = FOC_Alloy  conv.$):
+	DRAY = 1
+	LOSS = 3
+Global medium ID 14 (module = FOC, medium name = FOC_Aluminium$):
+	DRAY = 1
+	LOSS = 3
