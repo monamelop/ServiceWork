@@ -30,6 +30,7 @@ void drawFocalELayers_20()
         TColor::GetColor(255, 153, 0),
         TColor::GetColor(255, 204, 0)
     };
+    int brown = TColor::GetColor(139, 69, 19);  // marrom
 
     TGeoManager *geom = new TGeoManager("FOCAL", "FOCAL-E 20 Layers Modules Only");
 
@@ -70,8 +71,13 @@ void drawFocalELayers_20()
                 TString name = Form("mod_%d_%d_%d", iLayer, modX, modY);
                 TGeoVolume *mod = geom->MakeBox(name, medSi,
                     moduleSizeX / 2.0, moduleSizeY / 2.0, padThickness / 2.0);
-                mod->SetLineColor(colors[colorIndex]);
-                mod->SetFillColor(colors[colorIndex]);
+                if (iLayer == 4 || iLayer == 9) {
+                    mod->SetLineColor(brown);
+                    mod->SetFillColor(brown);
+                } else {
+                    mod->SetLineColor(colors[colorIndex]);
+                    mod->SetFillColor(colors[colorIndex]);
+                }
                 mod->SetTransparency(0);
 
                 top->AddNode(mod, volumeID++, new TGeoTranslation(x, y, z));
