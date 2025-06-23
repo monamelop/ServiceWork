@@ -1,6 +1,8 @@
 {
     "files.associations": {
-        "gun.C": "cpp"
+        "gun.C": "cpp",
+        "drawFocalELayers_20.C": "cpp",
+        "drawFocalLayerRealistic.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
