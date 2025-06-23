@@ -2,7 +2,8 @@
     "files.associations": {
         "gun.C": "cpp",
         "drawFocalELayers_20.C": "cpp",
-        "drawFocalLayerRealistic.C": "cpp"
+        "drawFocalLayerRealistic.C": "cpp",
+        "focHits_SaveAllLayers.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
