@@ -45,7 +45,7 @@ void focHits_EnergyPerPosition() {
     TH2F* h = (TH2F*)gDirectory->Get("hELossXY");
     if (h) {
         h->SetTitle("Total Energy Loss in XY Plane;X [cm];Y [cm];#Sigma E_{loss} [MeV]");
-        h->SetMaximum(1.1e6);  // Optional upper limit for color scale
+        //h->SetMaximum(1.1e6);  // Optional upper limit for color scale
         h->GetZaxis()->SetTitleOffset(2.0);
         h->Draw("COLZ");       // Redraw for style updates
         gStyle->SetPalette(kRainBow);  // Apply rainbow color palette
