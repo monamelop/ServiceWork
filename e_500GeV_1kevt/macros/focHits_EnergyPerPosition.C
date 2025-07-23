@@ -38,7 +38,7 @@ void focHits_EnergyPerPosition() {
    
     tree->Draw(
         "FOCHit.mPos.fCoordinates.fY : FOCHit.mPos.fCoordinates.fX >> hELossXY(100, -50, 50, 100, -50, 50)",
-        "FOCHit.mHitValue * (FOCHit.mPos.fCoordinates.fZ >= 700 && FOCHit.mPos.fCoordinates.fZ <= 717.85)",  // weight with Z cut
+ 	"FOCHit.mHitValue * (FOCHit.mPos.fCoordinates.fZ >= 700.00 && FOCHit.mPos.fCoordinates.fZ <= 717.85)",  // weight with Z cut
         "COLZ"
     );
 

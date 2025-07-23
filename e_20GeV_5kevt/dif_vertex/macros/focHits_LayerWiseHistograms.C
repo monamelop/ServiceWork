@@ -65,7 +65,7 @@ void focHits_LayerWiseHistograms()
 
     for (int iL = 0; iL < nLayers; ++iL) {
         TString hname = Form("hXY_Layer%d", iL);
-        TString htitle = Form("XY Energy Loss for Layer %d (Z in [%.2f, %.2f] cm);X [cm];Y [cm];#Sigma E_{loss} [MeV]",
+        TString htitle = Form("XY Energy Loss for Layer %d (Z in [%.1f, %.1f] cm);X [cm];Y [cm];#Sigma E_{loss} [MeV]",
                               iL, z0 + iL * layerThickness, z0 + (iL + 1) * layerThickness);
         hXY[iL] = new TH2F(hname, htitle, nPadsX, xMin, -xMin, nPadsY, yMin, -yMin);
 

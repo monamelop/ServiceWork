@@ -35,7 +35,11 @@ void focHits_EnergyPerPosition() {
 
     // Create and fill the 2D histogram:
     // X = x position, Y = y position, Weight = energy deposited (in MeV)
-   
+    //tree->Draw(
+    //    "FOCHit.mPos.fCoordinates.fY : FOCHit.mPos.fCoordinates.fX >> hELossXY(100, -50, 50, 100, -50, 50)",
+    //    "FOCHit.mHitValue",  // weight: energy loss per hit
+    //    "COLZ"               // 2D colored histogram
+    //);
     tree->Draw(
         "FOCHit.mPos.fCoordinates.fY : FOCHit.mPos.fCoordinates.fX >> hELossXY(100, -50, 50, 100, -50, 50)",
         "FOCHit.mHitValue * (FOCHit.mPos.fCoordinates.fZ >= 700 && FOCHit.mPos.fCoordinates.fZ <= 717.85)",  // weight with Z cut
